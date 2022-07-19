@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #efeff2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    /* background: cyan; */
+    box-shadow: 2px 2px 5px;
+    width: 300px;
+    height: 500px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    background: #22252D;
+    overflow: hidden;
+}
+
+form input {
+    width: 100%;
+    height: 150px;
+    border: 1rem solid #22252D;
+    border-radius: 12px;
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+    /* background: black; */
+    background: rgb(113, 121, 126);
+    text-align: right;
+    pointer-events: none;
+}
+
+button {
+    flex: 0 0 22%;
+    margin: 5px 0;
+    border: 1px solid #22252D;
+    width: 60px;
+    height: 52px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px;
+}
+
+button:hover {
+    background: lightsteelblue;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.btn-yellow {
+    background: rgba(245, 146, 62);
+    color: white;
+}
+
+.btn-grey {
+    background: rgb(224, 224, 224);
+}
+
+.btn-equal {
+    background: green;
+    height: 108px;
+    width: 60px;
+    height: 122px;
+    writing-mode: vertical-rl;
+}
+
+.btn-clear {
+    background: red;
+    width: 60px;
+    height: 52px;
+}
+
+.btn-sclear {
+    background: salmon;
+}
+
+.special-controls {
+    margin-top: -68px;
+    justify-content: space-between;
+    /* padding: 20px; */
+}
